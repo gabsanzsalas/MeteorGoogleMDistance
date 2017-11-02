@@ -1,0 +1,33 @@
+<head>
+  <title>mapTest</title>
+</head>
+
+<body>
+  <h1>Google Maps Distance Matrix Api Test</h1>
+
+  {{> templateTest}}
+  
+</body>
+
+<template name="templateTest">
+    <form class="form-evaluate">
+        <p>
+            <span>Origin: </span>
+            <br/>
+            <input type="text"  name="txtOrigin" value=""/>
+        </p>
+        <p>
+            <span>Destination: </span><br/><input type="text" name="txtDest" value=""/>
+        </p>
+        
+        <button type="submit" class="evaluate">Evalute</button>
+    </form>
+
+
+  
+ 
+  <p>origin addresses: {{origin_addresses}} </p>
+  <p>destination addresses: {{destination_addresses}} </p>
+  <p>distance: {{distance}} </p>
+  <p>duration: {{duration}} </p>
+</template>
